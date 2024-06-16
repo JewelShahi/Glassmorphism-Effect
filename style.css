@@ -1,0 +1,121 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  width: 60%;
+  max-height: 500px;
+  max-width: 700px;
+  margin: 0px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(22, 13, 69, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgb(51, 51, 51, 0.3);
+  backdrop-filter: blur(20px);
+}
+
+.content > input {
+  width: 70%;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border-top: 0px solid transparent;
+  border-bottom: 5px solid rgba(0, 255, 0, 0.5);
+  border-right: 0px solid transparent;
+  border-left: 0px solid transparent;
+  transition: border-bottom 0.3s ease-in;
+}
+
+input:focus {
+  outline: none;
+  border-top: 0px solid transparent;
+  border-bottom: 5px solid rgba(255, 0, 0, 0.5);
+  border-right: 0px solid transparent;
+  border-left: 0px solid transparent;
+}
+
+.button {
+  margin: 5px;
+  padding: 10px;
+  background: #007bff;
+  width: 40%;
+  height: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+  font-weight: 800;
+  transition: ease-in 300ms;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+  cursor: pointer;
+}
+
+.button:active {
+  scale: 0.9;
+}
+
+h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h1,
+p {
+  color: white;
+  text-align: center;
+}
+
+p {
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 350px) {
+  .content {
+    width: 100%;
+    margin: 0px 10px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+}
